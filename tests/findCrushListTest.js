@@ -17,4 +17,7 @@ describe('find crushs', () => {
     it('Retorna mensagem de tipo inválido', () => {
         findCrushs.encontraCrush(123).should.be.equal('Tipo inválido')
     });
+    it('Deve retornar um nome da lista', () => {
+        findCrushs.encontraCrush('Carlos Daniel').should.be.equal('Carlos Daniel')
+    });
 })
